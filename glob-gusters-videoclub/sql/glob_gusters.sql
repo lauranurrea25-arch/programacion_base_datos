@@ -45,7 +45,7 @@ CREATE TABLE Pelicula (
     CONSTRAINT fk_Nacionalidad
     FOREIGN KEY (NacionalidadID)
     REFERENCES Nacionalidad (NacionalidadID),
-  Titulo varhar (255),
+  Titulo varchar (255),
   Fecha date,
   DirectorID integer,
     CONSTRAINT fk_Director
@@ -105,7 +105,7 @@ CREATE TABLE Renta(
 );
 CREATE TABLE Cliente(
   Cliente_DNI integer PRIMARY KEY,
-  Nombre varchar (255),
+  Nombre varchar(255),
   Direccion varchar(255),
   Telefono varchar(255)
 );
